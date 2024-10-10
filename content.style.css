@@ -1,0 +1,91 @@
+
+/* CSS Cara #2 */
+.barbi{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.social-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    
+}
+
+@media (max-width: 991.98px) {
+    .social-list{
+        flex-direction: column;
+    }
+}
+
+/* Buat nambahin si cardnya gitu, trs fungsinya a biar sekiling si 
+kotaknya kalo di tap bisa langsung conect ke linknya. 
+jadi ga cuman harus klik si tulisannya aja*/
+.social-list > .social-item > a{
+    border: 1px solid #c6c8ca;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Buat nambahin gap antara icon sama tulisannya */
+.social-list > .social-item > a > i{
+    margin-right: 8px;
+}
+
+.social-list > .social-item:first-child > a{
+    background: #38569e;
+    color: #ffffff;
+}
+
+.social-list > .social-item:nth-child(2) > a {
+    background: linear-gradient(32deg, #ffc200, #ff243e, #fd02bf, #7d0cfe);
+    color: #ffffff;
+}
+
+.social-list > .social-item:last-child >a{
+    background: #ffffff;
+    color: #0274b3;
+}
+
+
+.card-img-top{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-gallery{
+    height: 300px;
+    width: 450px;
+    object-fit: contain;
+}
+
+.img-card{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.tools-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tools-item > i{
+    font-size: 60px;
+    text-decoration: none;
+    display: flex;
+    color: #38569e;
+    justify-content: center;
+    align-items: center;
+}
